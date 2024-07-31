@@ -1,0 +1,236 @@
+/* Основные стили */
+
+.content {
+    position: relative;
+    padding: 0 24px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 748px;
+    top: 80px;
+    gap: 0px;
+    border-radius: 20px 0px 0px 0px;
+    background: #4A53C133;
+}
+
+.container{
+    height: 810px;
+}
+
+.title {
+    color: #141A6B;
+    font-size: 32px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+/* CryptoCard.css */
+
+.card_title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.crypto_card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "image info price";
+    padding-top: 20px;
+    gap: 10px;
+    align-items: center;
+    width: 900px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #141A6B;
+}
+
+.card_image {
+    grid-area: image;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.crypto_card_info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crypto_card_price {
+    grid-area: price;
+    color: #141A6B;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: right;
+}
+
+/* Loading */
+
+.loading {
+    margin: 0 auto;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    align-content: stretch;
+    justify-content: center;
+}
+
+/* Адаптивные стили */
+
+/* Мобильные устройства (до 480px) */
+@media (max-width: 480px) {
+    .content {
+        width: 100%;
+        padding: 0 16px;
+        height: auto; /* Высота может изменяться */
+    }
+
+    .title {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .crypto_card {
+        width: 100%;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+          "image info"
+          "price price";
+    }
+
+    .card_image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .crypto_card_price {
+        font-size: 24px;
+    }
+
+    .loading {
+        font-size: 20px;
+    }
+}
+
+/* Плашеты (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 28px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+
+    .crypto_card {
+        width: 100%;
+    }
+
+    .card_image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .crypto_card_price {
+        font-size: 26px;
+    }
+
+    .loading {
+        font-size: 24px;
+    }
+}
+
+/* Маленькие десктопы (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .crypto_card {
+        width: 100%;
+    }
+
+    .card_image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .crypto_card_price {
+        font-size: 28px;
+    }
+
+    .loading {
+        font-size: 26px;
+    }
+}
+
+/* Средние десктопы (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .content {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .crypto_card {
+        width: 100%;
+    }
+
+    .card_image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .crypto_card_price {
+        font-size: 30px;
+    }
+
+    .loading {
+        font-size: 28px;
+    }
+}
+
+/* Большие десктопы (более 1440px) */
+@media (min-width: 1441px) {
+    .content {
+        width: 1000px;
+        padding: 0 24px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .crypto_card {
+        width: 900px;
+    }
+
+    .card_image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .crypto_card_price {
+        font-size: 30px;
+    }
+
+    .loading {
+        font-size: 30px;
+    }
+}

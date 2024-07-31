@@ -1,0 +1,110 @@
+.content {
+  position: relative;
+  padding: 0 24px;
+  margin: 0 auto;
+  width: 1000px;
+  height: 700px;
+  top: 80px;
+  gap: 0px;
+  border-radius: 20px 0px 0px 0px;
+
+  background: #4A53C133;
+
+  @media (width >= 1200px) {
+      padding: 0 16px;
+  }
+
+&.hero-body{
+  margin: 0 auto;
+}
+}
+
+.title{
+  color: #141A6B;
+  ;
+font-size: 32px;
+padding-left: 40px;
+padding-top: 40px;
+}
+
+
+
+
+//  WALLET CARD/* CryptoCard.css */
+
+.first_section{
+  height: 100px;
+  background: #4A53C133;
+  border-radius: 20px;
+  width: 1000px;
+  margin: 0 auto;
+
+  margin-bottom: 20px;
+}
+
+.second_section{
+  height: 325px;
+  background: #4A53C133; border-radius: 20px;
+  width: 1000px;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.third_section{
+  height: 285px;
+  background: #4A53C133; border-radius: 20px;
+  width: 1000px;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+
+
+.card_title{
+
+font-size:14px;
+text-transform: uppercase;
+font-weight: bolder;
+}
+
+
+.crypto_card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: 
+    "image info price";
+    padding-top: 20px;
+  gap: 10px; /* Пример отступов между элементами */
+  align-items: center;
+  // width: 438 px; /* Пример ширины контейнера */
+  width: 900px;
+  padding-bottom: 20px;
+  border-bottom:1px solid
+  #141A6B ;
+}
+
+.card_image {
+  grid-area: image;
+  width: 60px; /* Пример ширины изображения */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  margin-left: 20px;
+}
+
+.crypto_card_info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.crypto_card_price {
+  grid-area: price;
+
+  color: #141A6B;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: right; /* Выровнять текст по правому краю */
+}

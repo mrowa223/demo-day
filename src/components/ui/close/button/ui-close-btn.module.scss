@@ -1,0 +1,11 @@
+.closeBtn {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--white);
+
+    @media (width >= 1200px) {
+        display: none;
+    }
+}

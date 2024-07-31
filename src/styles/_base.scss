@@ -1,0 +1,36 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after, *:active, *:focus, *:hover {
+    outline: none;
+    outline-offset: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: var(--f-weight-regular);
+    line-height: 1.5rem;
+    color: var(--black-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
